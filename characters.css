@@ -1,0 +1,127 @@
+html {
+  cursor: url("achand.png"), auto;
+}
+*:hover {
+  cursor: url("achand.png"), auto;
+}
+*:active {
+  cursor: url("acactive.png"), auto;
+}
+@font-face {
+  font-family: "acf";
+  src: url("acf.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "acf";
+  color: #fff;
+  background-color: black;
+  font-size: 20px; /* Set the base font size */
+}
+::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+header {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 90px;
+  font-size: 19.2px;
+  transition: 0.5s;
+}
+nav a:hover {
+  font-size: 25px;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -500;
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.6;
+  object-fit: cover;
+  filter: blur(2px);
+  transition: 0.4s linear;
+}
+img:hover {
+  filter: blur(0px);
+  opacity: 0.8;
+}
+.ch1 {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-top: 0px;
+  width: 950px;
+  font-size: 25px;
+}
+
+.weapon {
+  padding-top: 30px;
+}
+.skill,
+.weapon {
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.skill ol,
+.weapon ol {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill li,
+.weapon li {
+  margin-right: 100px;
+}
+.sp1 {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.sp1:hover {
+  font-size: 35px;
+}
+.sp2 {
+  font-size: 23px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.sp2:hover {
+  font-size: 27px;
+}
